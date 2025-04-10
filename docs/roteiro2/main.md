@@ -61,6 +61,19 @@ $ juju status
 
 Em relação aos tipos de arquiteturas utilizados
 
+
+### Tarefas
+#### Tarefa 1 
+
+4. rove (print) que você está conseguindo acessar o Dashboard a partir da rede do Insper.
+
+![alt text](image1.png)
+
+
+5. De um print da tela do Dashboard do Grafana com o Prometheus aparecendo como source.
+
+![alt text](image.png)
+
 ### Instalação o Dashboard do JUJU para o controlador principal (controller)
 
 Execute o seguinte comando no terminal para habilitar o Dashboard no controlador Juj
