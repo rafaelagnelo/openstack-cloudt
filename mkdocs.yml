@@ -1,7 +1,7 @@
 site_name: Computação em Nuvem
-site_author: Silva, J.; Souza, P.
-site_url: https://hsandmann.github.io/insper.cloud.template
-repo_url: https://github.com/hsandmann/insper.cloud.template
+site_author: Agnelo, R.; Vidal, P.
+site_url: https://rafaelagnelo.github.io/openstack-cloudt/
+repo_url: https://github.com/rafaelagnelo/openstack-cloudt.git
 repo_name: github/insper.cloud.template
 
 theme:
@@ -68,7 +68,7 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
-  - markdown_grid_tables:
+  - markdown_grid_tables
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.details
