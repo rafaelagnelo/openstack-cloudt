@@ -6,17 +6,17 @@
     2025.1
 
 
-## KIT-P
+## KIT-T
 
-João da Silva
+Pedro Henrique Vidal
 
-Pedro de Souza
+Rafael Agnelo
 
 
 ## Entregas
 
 - [x] Roteiro 1 - Data 23/02/2025
-- [ ] Roteiro 2
+- [x] Roteiro 2
 - [ ] Roteiro 3
 - [ ] Roteiro 4
 - [ ] Projeto

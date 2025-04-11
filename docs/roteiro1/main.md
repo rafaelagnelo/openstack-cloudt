@@ -25,7 +25,6 @@ Dashboard do MAAS
 Conforme ilustrado acima, a tela inicial do MAAS apresenta um dashboard com informações sobre o estado atual dos servidores gerenciados. O dashboard é composto por diversos painéis, cada um exibindo informações sobre um aspecto específico do ambiente gerenciado. Os painéis podem ser configurados e personalizados de acordo com as necessidades do usuário.
 
 ![instalacao01-maas](image.png)
-### Tarefa 2
 
 ## App
 
@@ -53,7 +52,7 @@ architecture-beta
 ### Tarefa 2
 
 Dashboard do Maas:
-![alt text](image3.png)
+![alt text](image-3.png)
 
 Aba com imagens sincronizadas:
 
