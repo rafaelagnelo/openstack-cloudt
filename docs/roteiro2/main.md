@@ -45,7 +45,6 @@ clouds:
     type: maas
     auth-types: [oauth1]
     endpoint: http://192.168.0.3:5240/MAAS/
-
 ```
 
 Em seguida, adicionamos a cloud com o comando:
@@ -63,7 +62,6 @@ credentials:
     anyuser:
       auth-type: oauth1
       maas-oauth: <API KEY>
-      
 ```
 
 O valor <API KEY> foi substituído pela chave gerada no MAAS, disponível no menu do usuário.
@@ -151,9 +149,36 @@ Por fim, acessamos a interface gráfica do Juju, visualisando as aplicações im
 
 ## Tarefa
 
+### 1. Visualização das máquinas no Dashboard do MAAS
+
+A imagem abaixo mostra o painel do MAAS com as cinco máquinas cadastradas, onde duas estão com status Ready (prontas para uso) e três estão em estado Deployed, indicando que estão em operação. É possível visualizar também os IPs atribuídos a cada máquina ativa.
+
+![alt text](tarefa1.1.png)
+
+### 2. Verificação do estado dos serviços com juju status
+
+O comando juju status foi executado após o deploy completo das aplicações. A imagem a seguir mostra que tanto o Grafana quanto o Prometheus estão no estado active, indicando que os serviços estão operando corretamente. Também é possível verificar as portas abertas e os IPs atribuídos.
+
+![alt text](tarefa1.2.png)
 
 
+### 3. Integração entre Grafana e Prometheus no dashboard
 
+Nesta etapa, foi acessado o dashboard do Grafana, onde foi criado um painel que utiliza o Prometheus como fonte de dados (source). A imagem mostra o gráfico gerado a partir da consulta realizada no Prometheus.
+
+![alt text](tarefa1.3.png)
+
+### 4. Acesso ao Grafana a partir da rede do Insper
+
+A próxima imagem comprova o acesso ao dashboard do Grafana a partir da rede do Insper, como evidenciado pela conexão ativa à rede "Insper_Alunos". Isso demonstra que a aplicação está acessível fora da rede local do KIT.
+
+![alt text](tarefa1.4.png)
+
+### 5. Visualização das aplicações em execução no Dashboard do Juju
+
+Por fim, acessamos a interface gráfica do Juju para visualizar o modelo em uso e confirmar que as aplicações estão sendo gerenciadas corretamente. A imagem mostra o Grafana e o Prometheus com status Running, ambos implantados localmente.
+
+![alt text](tarefa1.5.png)
 
 
 
