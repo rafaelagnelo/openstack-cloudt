@@ -153,6 +153,27 @@ $ sudo ufw allow 5432/tcp
 $ sudo systemctl restart postgresql
 ```
 
+### Tarefa 1 - Validação do banco de dados PostgreSQL
+
+1. Verificação do status do PostgreSQL no server1
+
+O comando sudo systemctl status postgresql foi executado no terminal da máquina server1. A saída mostra que o serviço está com o status active (exited), indicando que o PostgreSQL está corretamente habilitado e funcionando no sistema operacional. Isso comprova que o banco de dados foi inicializado com sucesso e está pronto para receber conexões.
+
+![alt text](tarefa1.1.png)
+
+2. Teste de conexão local com o banco de dados PostgreSQL
+
+Na imagem, foi utilizado o comando psql -U cloud -h 172.16.15.0 tasks dentro do próprio server1 para acessar o banco de dados tasks. A autenticação foi feita com sucesso utilizando o usuário cloud, e a conexão foi estabelecida diretamente com o IP da máquina local. A presença do prompt tasks=# confirma que a conexão está ativa e funcional.
+
+![alt text](tarefa1.2.png)
+
+3. Acessível a partir da máquina MAIN
+
+Mostra o processo de instalação do postgresql-client, que é o cliente necessário para fazer conexão externa ao banco de dados PostgreSQL, partindo da máquina main.
+
+![alt text](tarefa1.3.png)
+
+
 ### 3.3 Deploy da aplicação Django no server2 via MAAS CLI
 
 Acessamos o terminal do main e realizamos login no MAAS:
@@ -197,12 +218,161 @@ Abrimos o navegador e acessamos:
 http://localhost:8001/admin/
 ```
 
-## Tarefa 2
+### Tarefa 2
 
-### 1. Lista de Imagens Importadas
+1. Comprovação da Infraestrutura MaaS e Imagens
 
-Vemos que a imagem do Ubuntu 22.04 LTS foi baixada e sincronizada com sucesso no ambiente MAAS, com arquitetura amd64 e status Synced. A sincronização é essencial para que os servidores possam ser deployados com essa versão.
+A imagem exibe cinco máquinas registradas no MAAS. Dentre elas, duas (server1 e server2) estão no estado Deployed, com IPs visíveis (172.16.15.0 e 172.16.15.6), o que confirma que já passaram pelo processo de deploy com a imagem do Ubuntu 22.04 LTS. As demais (server3, server4 e server5) estão em estado Ready, prontas para serem utilizadas.
 
-![alt text](tarefa2.1..png)
+![alt text](tarefa2.1.png)
 
-### 2. Estado atual das máquinas no MAAS 
+2. Sincronização da imagem Ubuntu 22.04 LTS no MAAS
+
+A imagem da versão 22.04 LTS do Ubuntu (arquitetura amd64) foi devidamente baixada e sincronizada com sucesso, estando marcada como Synced. Isso confirma que a infraestrutura está pronta para realizar deploys com essa versão nas máquinas disponíveis no pool do kit.
+
+![alt text](tarefa2.2.png)
+
+3. Comissionamento das máquina com status “Passed”
+
+Agora, vemos os testes de comissionamento realizados nas 5 máquinasTodos os testes — incluindo verificação de interfaces de rede, informações de hardware, portas seriais e hints de configuração — retornaram com status “Passed”, o que garante que o nó foi corretamente detectado e está apto a ser utilizado na nuvem bare-metal. 
+
+Server 1:
+
+![alt text](tarefa2.3.1.png)
+
+Server 2:
+
+![alt text](tarefa2.3.2.png)
+
+Server 3: 
+
+![alt text](tarefa2.3.3.png)
+
+Server 4: 
+
+![alt text](tarefa2.3.4.png)
+
+Server 5:
+
+![alt text](tarefa2.3.5.png)
+
+### 3.5 Deploy automatizado da aplicação no server3 com Ansible
+
+Realizamos a instalação do Ansible no main:
+
+``` bash
+$ sudo apt install ansible
+$ wget https://raw.githubusercontent.com/raulikeda/tasks/master/tasks-install-playbook.yaml
+```
+
+Solicitamos o deploy do server3 via MAAS CLI e rodamos o playbook:
+
+``` bash
+$ maas cloud machines allocate name=server3
+$ maas cloud machine deploy [system_id]
+
+$ ansible-playbook tasks-install-playbook.yaml --extra-vars server=172.16.15.3
+```
+
+A aplicação foi implantada automaticamente, conectando-se ao banco do server1.
+
+### Tarefa 3
+
+1. Máquinas alocadas no MAAS após deploy da aplicação
+
+Vemos que três máquinas (server1, server2 e server3) estão com status Deployed, indicando que foram utilizadas para banco de dados e aplicações Django.
+
+![alt text](tarefa3.1.png)
+
+2. Aplicação Django em execução no server2
+
+O print mostra o Hello, world. You're at the tasks index. retornado pela aplicação Django, acessada via navegador local utilizando localhost:8001/tasks. Isso confirma que a aplicação está funcional e acessível.
+
+![alt text](tarefa3.2.png)
+
+3. Explicação do Deploy manual
+
+Para realizar o deploy manual da aplicação Django no server2, primeiramente solicitamos a alocação da máquina via MAAS CLI. Em seguida, executamos os comandos para clonar o repositório da aplicação e iniciar o processo de instalação via o script install.sh. O serviço foi configurado para escutar na porta 8080, e o acesso externo foi possível através da criação de um túnel SSH a partir do main, redirecionando o tráfego da porta 8001 local para a porta 8080 do server2. Esse procedimento permitiu validar o funcionamento completo da aplicação hospedada na máquina provisionada.
+
+### 3.6 Configuração do Load Balancer com NGINX no server4
+
+Instalamos o NGINX no server4:
+
+``` bash
+$ sudo apt-get install nginx
+```
+
+Editamos o arquivo de configuração padrão:
+
+``` bash
+$ sudo nano /etc/nginx/sites-available/default
+```
+
+Adicionamos o módulo de balanceamento:
+
+
+``` bash
+upstream backend {
+    server 172.16.15.2:8080;
+    server 172.16.15.3:8080;
+}
+
+server {
+    listen 80;
+    location / {
+        proxy_pass http://backend;
+    }
+}
+```
+Reiniciamos o serviço:
+
+
+``` bash
+$ sudo service nginx restart
+```
+
+Modificamos o conteúdo da função index() no arquivo tasks/views.py de cada servidor para exibir uma mensagem personalizada, identificando qual servidor respondeu a requisição.
+
+### Tarefa 4
+
+2. Acesso ao Server2 via túnel SSH
+
+A imagem mostra o terminal local conectado ao server2 via SSH. Este túnel permite o redirecionamento do tráfego da porta 8001 do computador local para a porta 8080 do server2, onde a aplicação Django está hospedada. Vendo o texto padrão no fundo, confirmamos o funcionamento da aplicação Django no Server 2.
+
+![alt text](tarefa4.3.png)
+
+3. Acesso ao Server3 via túnel SSH
+
+O mesmo racional do acesso ao server 2, mas para o server3.
+
+![alt text](tarefa4.2.png)
+
+4. Diferença entre instalação manual e via Ansible
+
+A instalação manual exige executar cada passo diretamente no terminal (como clonar o repositório, rodar install.sh, configurar dependências e reiniciar). Já com o Ansible, tudo é feito automaticamente por meio de um playbook, o que economiza tempo, reduz erros e garante que o processo seja idêntico em vários servidores.
+
+### Tarefa 5
+
+1. Quatro máquinas no estado Deployed com IPs visíveis no MAAS
+
+Vemos o dashboard do MAAS com quatro máquinas no estado Deployed (server1, server2, server3 e server4), cada uma com seu respectivo IP visível. Essa visualização confirma que os nós estão devidamente provisionados com Ubuntu 22.04 LTS e prontos para operação, incluindo o server4, que atuará como balanceador de carga via NGINX.
+
+![alt text](tarefa5.1.png)
+
+2. GET request mostra resposta da aplicação no server3 e server 2 via proxy reverso
+
+Por fim, notamos o conteúdo acessado via localhost:8001/tasks/, que está sendo redirecionado através do proxy reverso configurado no server4 (NGINX). As mensagens "Olá, você está no server3." e "Olá, você está no server2." confirmam funcionamento do balanceamento de carga via NGINX. 
+
+Server3: 
+
+![alt text](tarefa5.3.1.png)
+
+Server2:
+
+![alt text](tarefa5.3.2.png)
+
+### 3.7 Finalização e limpeza do ambiente
+
+Após os testes, realizamos o release de todos os servidores do kit através do dashboard do MAAS. Esse processo liberou os recursos de hardware utilizados para as aplicações e preparou o ambiente para futuros testes.
+
+
