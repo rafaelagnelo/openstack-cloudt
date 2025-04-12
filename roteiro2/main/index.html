@@ -595,6 +595,57 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Tarefa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-visualizacao-das-maquinas-no-dashboard-do-maas" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Visualização das máquinas no Dashboard do MAAS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-verificacao-do-estado-dos-servicos-com-juju-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Verificação do estado dos serviços com juju status
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-integracao-entre-grafana-e-prometheus-no-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Integração entre Grafana e Prometheus no dashboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-acesso-ao-grafana-a-partir-da-rede-do-insper" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Acesso ao Grafana a partir da rede do Insper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-visualizacao-das-aplicacoes-em-execucao-no-dashboard-do-juju" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Visualização das aplicações em execução no Dashboard do Juju
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -834,6 +885,57 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Tarefa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-visualizacao-das-maquinas-no-dashboard-do-maas" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Visualização das máquinas no Dashboard do MAAS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-verificacao-do-estado-dos-servicos-com-juju-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Verificação do estado dos serviços com juju status
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-integracao-entre-grafana-e-prometheus-no-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Integração entre Grafana e Prometheus no dashboard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-acesso-ao-grafana-a-partir-da-rede-do-insper" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Acesso ao Grafana a partir da rede do Insper
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-visualizacao-das-aplicacoes-em-execucao-no-dashboard-do-juju" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Visualização das aplicações em execução no Dashboard do Juju
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -936,6 +1038,21 @@ Em seguida, baixamos:</p>
 <p>Na sequência, validamos o funcionamento da aplicação acessando o dashboard do Grafana a partir da rede do Insper. A conexão foi estabelecida com sucesso, comprovando a disponibilidade da aplicação fora do ambiente local.</p>
 <p>Por fim, acessamos a interface gráfica do Juju, visualisando as aplicações implantadas e em execução dentro do modelo ativo.</p>
 <h2 id="tarefa">Tarefa</h2>
+<h3 id="1-visualizacao-das-maquinas-no-dashboard-do-maas">1. Visualização das máquinas no Dashboard do MAAS</h3>
+<p>A imagem abaixo mostra o painel do MAAS com as cinco máquinas cadastradas, onde duas estão com status Ready (prontas para uso) e três estão em estado Deployed, indicando que estão em operação. É possível visualizar também os IPs atribuídos a cada máquina ativa.</p>
+<p><a class="glightbox" href="../tarefa1.1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa1.1.png" /></a></p>
+<h3 id="2-verificacao-do-estado-dos-servicos-com-juju-status">2. Verificação do estado dos serviços com juju status</h3>
+<p>O comando juju status foi executado após o deploy completo das aplicações. A imagem a seguir mostra que tanto o Grafana quanto o Prometheus estão no estado active, indicando que os serviços estão operando corretamente. Também é possível verificar as portas abertas e os IPs atribuídos.</p>
+<p><a class="glightbox" href="../tarefa1.2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa1.2.png" /></a></p>
+<h3 id="3-integracao-entre-grafana-e-prometheus-no-dashboard">3. Integração entre Grafana e Prometheus no dashboard</h3>
+<p>Nesta etapa, foi acessado o dashboard do Grafana, onde foi criado um painel que utiliza o Prometheus como fonte de dados (source). A imagem mostra o gráfico gerado a partir da consulta realizada no Prometheus.</p>
+<p><a class="glightbox" href="../tarefa1.3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa1.3.png" /></a></p>
+<h3 id="4-acesso-ao-grafana-a-partir-da-rede-do-insper">4. Acesso ao Grafana a partir da rede do Insper</h3>
+<p>A próxima imagem comprova o acesso ao dashboard do Grafana a partir da rede do Insper, como evidenciado pela conexão ativa à rede "Insper_Alunos". Isso demonstra que a aplicação está acessível fora da rede local do KIT.</p>
+<p><a class="glightbox" href="../tarefa1.4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa1.4.png" /></a></p>
+<h3 id="5-visualizacao-das-aplicacoes-em-execucao-no-dashboard-do-juju">5. Visualização das aplicações em execução no Dashboard do Juju</h3>
+<p>Por fim, acessamos a interface gráfica do Juju para visualizar o modelo em uso e confirmar que as aplicações estão sendo gerenciadas corretamente. A imagem mostra o Grafana e o Prometheus com status Running, ambos implantados localmente.</p>
+<p><a class="glightbox" href="../tarefa1.5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa1.5.png" /></a></p>
 
 
 
