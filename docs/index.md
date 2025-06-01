@@ -17,9 +17,9 @@ Rafael Agnelo
 
 - [x] Roteiro 1 - Data 23/02/2025
 - [x] Roteiro 2
-- [ ] Roteiro 3
-- [ ] Roteiro 4
-- [ ] Projeto
+- [x] Roteiro 3
+- [x] Roteiro 4
+- [x] Projeto
 
 
 ## Referências

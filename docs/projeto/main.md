@@ -173,9 +173,6 @@ Testamos os endpoints pelo próprio link fornecido pela AWS Lightsail. Verificam
 * Acesso ao `/consultar` com scraping de dados reais
 * Funcionamento do `/health-check`
 
-📸 *Espaço reservado para prints dos endpoints em execução na AWS*
-
-
 
 ### 3.5 Custos
 
