@@ -245,4 +245,3 @@ O time de DevOps é essencial para garantir a integração contínua, entrega au
 
 ---
 
-*Fim do roteiro* ✅
