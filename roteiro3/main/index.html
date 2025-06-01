@@ -131,6 +131,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#roteiro-3-private-cloud-com-openstack" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -443,6 +448,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Roteiro 3
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -455,6 +475,478 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-infraestrutura" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Infraestrutura
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Infraestrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-juju-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Juju Controller
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-modelo-de-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Modelo de deploy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-ceph-osd" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Ceph OSD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-nova-compute" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Nova Compute
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-mysql-innodb-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 MySQL InnoDB Cluster
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-vault" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 Vault
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-neutron-ovn" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7 Neutron + OVN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-keystone" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8 Keystone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-rabbitmq" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9 RabbitMQ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#210-nova-cloud-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.10 Nova Cloud Controller
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#211-placement" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.11 Placement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212-horizon-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.12 Horizon (Dashboard)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.13 Glance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#214-ceph-monitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.14 Ceph Monitor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#215-cinder" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.15 Cinder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#216-ceph-rados-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.16 Ceph RADOS Gateway
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#217-configuracao-final-dos-discos-ceph-osd" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.17 Configuração final dos discos Ceph OSD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#218-acerca-do-fim-da-infra" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.18 Acerca do Fim da Infra
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-autenticacao-keystone" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Autenticação (Keystone)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-acompanhamento-em-tempo-real-horizon" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Acompanhamento em tempo real (Horizon)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa - 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tarefa - 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-status-do-juju" class="md-nav__link">
+    <span class="md-ellipsis">
+      (a) Status do Juju
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-dashboard-do-maas-com-as-maquinas" class="md-nav__link">
+    <span class="md-ellipsis">
+      (b) Dashboard do MAAS com as máquinas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-aba-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      (c) Aba overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-aba-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      (d) Aba instances
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-aba-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      (e) Aba topology
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-imagens-e-flavors" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Imagens e Flavors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-rede-externa" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Rede externa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-rede-interna-roteador" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Rede interna &amp; roteador
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-seguranca-e-chaves" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Segurança e chaves
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-instancia-de-validacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 Instância de validação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-escalonamento-dos-nos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.8 Escalonamento dos nós
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tarefa 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prints-pos-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Prints Pós-Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-dashboard-maas-com-as-maquinas" class="md-nav__link">
+    <span class="md-ellipsis">
+      (a) Dashboard MAAS com as máquinas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-aba-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      (b) Aba Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-aba-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      (c) Aba instances
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-aba-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      (d) Aba topology
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-diferencas-encontradas-entre-os-prints-das-telas-na-tarefa-1-e-na-tarefa-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Diferenças encontradas entre os prints das telas na Tarefa 1 e na Tarefa 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-origem-de-cada-novo-recurso" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Origem de cada novo recurso
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-openstack-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.9 Openstack Funcional
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. App
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 4
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -530,6 +1022,469 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-infraestrutura" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Infraestrutura
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Infraestrutura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-juju-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Juju Controller
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-modelo-de-deploy" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Modelo de deploy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-ceph-osd" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Ceph OSD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-nova-compute" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Nova Compute
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-mysql-innodb-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 MySQL InnoDB Cluster
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-vault" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 Vault
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-neutron-ovn" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.7 Neutron + OVN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-keystone" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8 Keystone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-rabbitmq" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.9 RabbitMQ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#210-nova-cloud-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.10 Nova Cloud Controller
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#211-placement" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.11 Placement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212-horizon-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.12 Horizon (Dashboard)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.13 Glance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#214-ceph-monitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.14 Ceph Monitor
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#215-cinder" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.15 Cinder
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#216-ceph-rados-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.16 Ceph RADOS Gateway
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#217-configuracao-final-dos-discos-ceph-osd" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.17 Configuração final dos discos Ceph OSD
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#218-acerca-do-fim-da-infra" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.18 Acerca do Fim da Infra
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-autenticacao-keystone" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Autenticação (Keystone)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-acompanhamento-em-tempo-real-horizon" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Acompanhamento em tempo real (Horizon)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa - 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tarefa - 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-status-do-juju" class="md-nav__link">
+    <span class="md-ellipsis">
+      (a) Status do Juju
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-dashboard-do-maas-com-as-maquinas" class="md-nav__link">
+    <span class="md-ellipsis">
+      (b) Dashboard do MAAS com as máquinas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-aba-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      (c) Aba overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-aba-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      (d) Aba instances
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-aba-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      (e) Aba topology
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-imagens-e-flavors" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Imagens e Flavors
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-rede-externa" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Rede externa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-rede-interna-roteador" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Rede interna &amp; roteador
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-seguranca-e-chaves" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Segurança e chaves
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-instancia-de-validacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 Instância de validação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-escalonamento-dos-nos" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.8 Escalonamento dos nós
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tarefa 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-prints-pos-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Prints Pós-Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-dashboard-maas-com-as-maquinas" class="md-nav__link">
+    <span class="md-ellipsis">
+      (a) Dashboard MAAS com as máquinas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-aba-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      (b) Aba Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-aba-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      (c) Aba instances
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-aba-topology" class="md-nav__link">
+    <span class="md-ellipsis">
+      (d) Aba topology
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-diferencas-encontradas-entre-os-prints-das-telas-na-tarefa-1-e-na-tarefa-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Diferenças encontradas entre os prints das telas na Tarefa 1 e na Tarefa 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-origem-de-cada-novo-recurso" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Origem de cada novo recurso
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-openstack-funcional" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.9 Openstack Funcional
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. App
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. App">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tarefa-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tarefa 4
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -548,9 +1503,441 @@
   
 
 
-  <h1>Roteiro 3</h1>
-
-
+<h1 id="roteiro-3-private-cloud-com-openstack">Roteiro 3 – Private Cloud com OpenStack</h1>
+<h2 id="1-objetivos">1. Objetivos</h2>
+<p>Este roteiro dá sequência aos anteriores (MAAS e Juju) e foca na criação de uma nuvem privada baseada em OpenStack, usando o mesmo kit de servidores. Aqui definimos o que será feito e por quê. Assim é necessário:</p>
+<ul>
+<li>
+<p>Reconhecer o que é uma nuvem privada e por que usá-la dentro do laboratório.</p>
+</li>
+<li>
+<p>Entender, de forma básica, os principais blocos do OpenStack (controle, computação, rede e armazenamento).</p>
+</li>
+<li>
+<p>Montar a infraestrutura física mínima necessária para o cluster.</p>
+</li>
+<li>
+<p>Instalar o OpenStack (via Juju + MAAS) em modo funcional, ainda que não-HA.</p>
+</li>
+<li>
+<p>Testar a criação de uma VM, rede interna e volume para validar o ambiente.</p>
+</li>
+</ul>
+<h2 id="2-infraestrutura">2. Infraestrutura</h2>
+<p>Neste roteiro, instalamos o OpenStack sobre o kit, continuando a usar o MAAS para orquestrar o bare-metal e o Juju para implantar os serviços; isso permitiu criar e distribuir VMs de modo eficiente entre todos os nós. A implantação seguiu o guia oficial do OpenStack, já adaptado ao nosso ambiente:</p>
+<ul>
+<li>
+<p>Papéis dos nós – server1 atuou como controller (e hospedou o Juju Controller); server2 ficou reservado para contingência; server3-5 funcionaram como compute.</p>
+</li>
+<li>
+<p>Monitoramento em tempo real – em um terminal extra, executamos:</p>
+</li>
+</ul>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>watch<span class="w"> </span>-n<span class="w"> </span><span class="m">2</span><span class="w"> </span>--color<span class="w"> </span><span class="s2">&quot;juju status --color&quot;</span>
+</span></code></pre></div>
+para acompanhar a instalação a cada 2 s.</p>
+<p>Com essa estrutura definida, prosseguimos para os detalhes de hardware, rede e mapeamento de serviços.</p>
+<h3 id="21-juju-controller">2.1 Juju Controller</h3>
+<p>Instalamos o Juju Controller no server1, após aplicar a tag controller, usando:</p>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>juju<span class="w"> </span>bootstrap<span class="w"> </span>--bootstrap-series<span class="o">=</span>jammy<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span>--constraints<span class="w"> </span><span class="nv">tags</span><span class="o">=</span>controller<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>maas-one<span class="w"> </span>maas-controller
+</span></code></pre></div>
+Esse nó passou a gerenciar todo o deploy do OpenStack.</p>
+<h3 id="22-modelo-de-deploy">2.2 Modelo de deploy</h3>
+<p>Criamos o modelo openstack e mudamos para ele:</p>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>juju<span class="w"> </span>add-model<span class="w"> </span>--config<span class="w"> </span>default-series<span class="o">=</span>jammy<span class="w"> </span>openstack
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>juju<span class="w"> </span>switch<span class="w"> </span>maas-controller:openstack
+</span></code></pre></div>
+(O Juju Dashboard pôde ser habilitado opcionalmente.)</p>
+<h3 id="23-ceph-osd">2.3 Ceph OSD</h3>
+<p>Preparamos o arquivo ceph-osd.yaml indicando os discos (/dev/sda /dev/sdb) e implantamos três unidades — uma em cada nó compute (server3-5):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>-n<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span>--channel<span class="w"> </span>quincy/stable<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span>--config<span class="w"> </span>ceph-osd.yaml<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span>--constraints<span class="w"> </span><span class="nv">tags</span><span class="o">=</span>compute<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span>ceph-osd
+</span></code></pre></div>
+<h3 id="24-nova-compute">2.4 Nova Compute</h3>
+<p>Criamos nova-compute.yaml (live-migration, resize, QEMU, etc.) e distribuímos três unidades de nova-compute nos mesmos nós compute:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>-n<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span>--to<span class="w"> </span><span class="m">0</span>,1,2<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span>--channel<span class="w"> </span>yoga/stable<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span>--config<span class="w"> </span>nova-compute.yaml<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span>nova-compute
+</span></code></pre></div>
+<h3 id="25-mysql-innodb-cluster">2.5 MySQL InnoDB Cluster</h3>
+<p>Implantamos o banco de dados MySQL em contêineres LXD sobre os três nós compute:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>-n<span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span>--to<span class="w"> </span>lxd:0,lxd:1,lxd:2<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span>--channel<span class="w"> </span><span class="m">8</span>.0/stable<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span>mysql-innodb-cluster
+</span></code></pre></div>
+<h3 id="26-vault">2.6 Vault</h3>
+<p>Implantamos Vault num contêiner LXD do server5, configurando o roteamento MySQL e integrando-o ao cluster:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--to<span class="w"> </span>lxd:2<span class="w"> </span>--channel<span class="w"> </span><span class="m">1</span>.8/stable<span class="w"> </span>vault
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--channel<span class="w"> </span><span class="m">8</span>.0/stable<span class="w"> </span>mysql-router<span class="w"> </span>vault-mysql-router
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>juju<span class="w"> </span>integrate<span class="w"> </span>vault-mysql-router:db-router<span class="w">      </span>mysql-innodb-cluster:db-router
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>juju<span class="w"> </span>integrate<span class="w"> </span>vault-mysql-router:shared-db<span class="w">      </span>vault:shared-db
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>juju<span class="w"> </span>run<span class="w"> </span>vault/leader<span class="w"> </span>generate-root-ca
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>juju<span class="w"> </span>integrate<span class="w"> </span>mysql-innodb-cluster:certificates<span class="w"> </span>vault:certificates
+</span></code></pre></div>
+<p>Após isso, inicializamos e unsealamos o Vault conforme a documentação.</p>
+<h3 id="27-neutron-ovn">2.7 Neutron + OVN</h3>
+<p>Criamos neutron.yaml com mapeamentos de bridge (br-ex) e provider physnet1. Implantamos:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>-n<span class="w"> </span><span class="m">3</span><span class="w"> </span>--to<span class="w"> </span>lxd:0,lxd:1,lxd:2<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span>--channel<span class="w"> </span><span class="m">22</span>.03/stable<span class="w"> </span>ovn-central
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--to<span class="w"> </span>lxd:1<span class="w"> </span>--channel<span class="w"> </span>yoga/stable<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span>--config<span class="w"> </span>neutron.yaml<span class="w"> </span>neutron-api
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--channel<span class="w"> </span>yoga/stable<span class="w">   </span>neutron-api-plugin-ovn
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--channel<span class="w"> </span><span class="m">22</span>.03/stable<span class="w">  </span>--config<span class="w"> </span>neutron.yaml<span class="w"> </span>ovn-chassis
+</span></code></pre></div>
+<p>Integrações principais:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>juju<span class="w"> </span>integrate<span class="w"> </span>neutron-api-plugin-ovn:neutron-plugin<span class="w"> </span>neutron-api:neutron-plugin-api-subordinate
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>juju<span class="w"> </span>integrate<span class="w"> </span>neutron-api-plugin-ovn:ovsdb-cms<span class="w"> </span>ovn-central:ovsdb-cms
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>juju<span class="w"> </span>integrate<span class="w"> </span>ovn-chassis:ovsdb<span class="w"> </span>ovn-central:ovsdb
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>juju<span class="w"> </span>integrate<span class="w"> </span>ovn-chassis:nova-compute<span class="w"> </span>nova-compute:neutron-plugin
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="k">for</span><span class="w"> </span>app<span class="w"> </span><span class="k">in</span><span class="w"> </span>neutron-api<span class="w"> </span>neutron-api-plugin-ovn<span class="w"> </span>ovn-central<span class="w"> </span>ovn-chassis<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span>juju<span class="w"> </span>integrate<span class="w"> </span><span class="nv">$app</span>:certificates<span class="w"> </span>vault:certificates
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="k">done</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--channel<span class="w"> </span><span class="m">8</span>.0/stable<span class="w"> </span>mysql-router<span class="w"> </span>neutron-api-mysql-router
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>juju<span class="w"> </span>integrate<span class="w"> </span>neutron-api-mysql-router:db-router<span class="w">  </span>mysql-innodb-cluster:db-router
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>juju<span class="w"> </span>integrate<span class="w"> </span>neutron-api-mysql-router:shared-db<span class="w"> </span>neutron-api:shared-db
+</span></code></pre></div>
+<h3 id="28-keystone">2.8 Keystone</h3>
+<p>Implantamos Keystone em contêiner LXD do server3 e o conectamos ao banco e aos serviços:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--to<span class="w"> </span>lxd:0<span class="w"> </span>--channel<span class="w"> </span>yoga/stable<span class="w"> </span>keystone
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--channel<span class="w"> </span><span class="m">8</span>.0/stable<span class="w"> </span>mysql-router<span class="w"> </span>keystone-mysql-router
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>juju<span class="w"> </span>integrate<span class="w"> </span>keystone-mysql-router:db-router<span class="w"> </span>mysql-innodb-cluster:db-router
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>juju<span class="w"> </span>integrate<span class="w"> </span>keystone-mysql-router:shared-db<span class="w"> </span>keystone:shared-db
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>juju<span class="w"> </span>integrate<span class="w"> </span>keystone:identity-service<span class="w"> </span>neutron-api:identity-service
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>juju<span class="w"> </span>integrate<span class="w"> </span>keystone:certificates<span class="w">       </span>vault:certificates
+</span></code></pre></div>
+<h3 id="29-rabbitmq">2.9 RabbitMQ</h3>
+<p>Por fim, provisionamos RabbitMQ em contêiner LXD do server5 e ligamos suas filas aos serviços de rede e compute:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--to<span class="w"> </span>lxd:2<span class="w"> </span>--channel<span class="w"> </span><span class="m">3</span>.9/stable<span class="w"> </span>rabbitmq-server
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>juju<span class="w"> </span>integrate<span class="w"> </span>rabbitmq-server:amqp<span class="w"> </span>neutron-api:amqp
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>juju<span class="w"> </span>integrate<span class="w"> </span>rabbitmq-server:amqp<span class="w"> </span>nova-compute:amqp
+</span></code></pre></div>
+<p>Com todos esses passos concluídos e monitorados por meio de:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>watch<span class="w"> </span>-n<span class="w"> </span><span class="m">2</span><span class="w"> </span>--color<span class="w"> </span><span class="s2">&quot;juju status --color&quot;</span>
+</span></code></pre></div>
+<p>os units chegaram a active/idle, validando a instalação básica do OpenStack.</p>
+<h3 id="210-nova-cloud-controller">2.10 Nova Cloud Controller</h3>
+<p>Criamos o arquivo ncc.yaml (network-manager: Neutron) e implantamos o serviço Nova Cloud Controller em um contêiner LXD do server5:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--to<span class="w"> </span>lxd:2<span class="w"> </span>--channel<span class="w"> </span>yoga/stable<span class="w"> </span>--config<span class="w"> </span>ncc.yaml<span class="w"> </span>nova-cloud-controller
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--channel<span class="w"> </span><span class="m">8</span>.0/stable<span class="w"> </span>mysql-router<span class="w"> </span>ncc-mysql-router
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>juju<span class="w"> </span>integrate<span class="w"> </span>ncc-mysql-router:db-router<span class="w">   </span>mysql-innodb-cluster:db-router
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>juju<span class="w"> </span>integrate<span class="w"> </span>ncc-mysql-router:shared-db<span class="w">   </span>nova-cloud-controller:shared-db
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>juju<span class="w"> </span>integrate<span class="w"> </span>nova-cloud-controller:identity-service<span class="w"> </span>keystone:identity-service
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>juju<span class="w"> </span>integrate<span class="w"> </span>nova-cloud-controller:amqp<span class="w">            </span>rabbitmq-server:amqp
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>juju<span class="w"> </span>integrate<span class="w"> </span>nova-cloud-controller:neutron-api<span class="w">      </span>neutron-api:neutron-api
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>juju<span class="w"> </span>integrate<span class="w"> </span>nova-cloud-controller:cloud-compute<span class="w">    </span>nova-compute:cloud-compute
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>juju<span class="w"> </span>integrate<span class="w"> </span>nova-cloud-controller:certificates<span class="w">     </span>vault:certificates
+</span></code></pre></div>
+<h3 id="211-placement">2.11 Placement</h3>
+<p>Implantamos o serviço Placement, também em contêiner LXD do server5, e o integramos ao banco de dados:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--to<span class="w"> </span>lxd:2<span class="w"> </span>--channel<span class="w"> </span>yoga/stable<span class="w"> </span>placement
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--channel<span class="w"> </span><span class="m">8</span>.0/stable<span class="w"> </span>mysql-router<span class="w"> </span>placement-mysql-router
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>juju<span class="w"> </span>integrate<span class="w"> </span>placement-mysql-router:db-router<span class="w">  </span>mysql-innodb-cluster:db-router
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>juju<span class="w"> </span>integrate<span class="w"> </span>placement-mysql-router:shared-db<span class="w"> </span>placement:shared-db
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>juju<span class="w"> </span>integrate<span class="w"> </span>placement:identity-service<span class="w"> </span>keystone:identity-service
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>juju<span class="w"> </span>integrate<span class="w"> </span>placement:placement<span class="w">         </span>nova-cloud-controller:placement
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>juju<span class="w"> </span>integrate<span class="w"> </span>placement:certificates<span class="w">      </span>vault:certificates
+</span></code></pre></div>
+<h3 id="212-horizon-dashboard">2.12 Horizon (Dashboard)</h3>
+<p>Implantamos o Horizon em outro contêiner LXD do server5:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--to<span class="w"> </span>lxd:2<span class="w"> </span>--channel<span class="w"> </span>yoga/stable<span class="w"> </span>openstack-dashboard
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--channel<span class="w"> </span><span class="m">8</span>.0/stable<span class="w"> </span>mysql-router<span class="w"> </span>dashboard-mysql-router
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>juju<span class="w"> </span>integrate<span class="w"> </span>dashboard-mysql-router:db-router<span class="w">  </span>mysql-innodb-cluster:db-router
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>juju<span class="w"> </span>integrate<span class="w"> </span>dashboard-mysql-router:shared-db<span class="w"> </span>openstack-dashboard:shared-db
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>juju<span class="w"> </span>integrate<span class="w"> </span>openstack-dashboard:identity-service<span class="w"> </span>keystone:identity-service
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>juju<span class="w"> </span>integrate<span class="w"> </span>openstack-dashboard:certificates<span class="w">   </span>vault:certificates
+</span></code></pre></div>
+<h3 id="213-glance">2.13 Glance</h3>
+<p>Implantamos o Glance no mesmo host LXD (server5) e o configuramos para usar Ceph:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--to<span class="w"> </span>lxd:2<span class="w"> </span>--channel<span class="w"> </span>yoga/stable<span class="w"> </span>glance
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--channel<span class="w"> </span><span class="m">8</span>.0/stable<span class="w"> </span>mysql-router<span class="w"> </span>glance-mysql-router
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>juju<span class="w"> </span>integrate<span class="w"> </span>glance-mysql-router:db-router<span class="w">  </span>mysql-innodb-cluster:db-router
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>juju<span class="w"> </span>integrate<span class="w"> </span>glance-mysql-router:shared-db<span class="w"> </span>glance:shared-db
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>juju<span class="w"> </span>integrate<span class="w"> </span>glance:image-service<span class="w">    </span>nova-cloud-controller:image-service
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>juju<span class="w"> </span>integrate<span class="w"> </span>glance:image-service<span class="w">    </span>nova-compute:image-service
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>juju<span class="w"> </span>integrate<span class="w"> </span>glance:identity-service<span class="w"> </span>keystone:identity-service
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>juju<span class="w"> </span>integrate<span class="w"> </span>glance:certificates<span class="w">     </span>vault:certificates
+</span></code></pre></div>
+<h3 id="214-ceph-monitor">2.14 Ceph Monitor</h3>
+<p>Criamos ceph-mon.yaml com expected-osd-count: 3 e implantamos três monitores Ceph em contêineres LXD (um em cada nó compute):</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>-n<span class="w"> </span><span class="m">3</span><span class="w"> </span>--to<span class="w"> </span>lxd:0,lxd:1,lxd:2<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">     </span>--channel<span class="w"> </span>quincy/stable<span class="w"> </span>--config<span class="w"> </span>ceph-mon.yaml<span class="w"> </span>ceph-mon
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>juju<span class="w"> </span>integrate<span class="w"> </span>ceph-mon:osd<span class="w">    </span>ceph-osd:mon
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>juju<span class="w"> </span>integrate<span class="w"> </span>ceph-mon:client<span class="w"> </span>nova-compute:ceph
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>juju<span class="w"> </span>integrate<span class="w"> </span>ceph-mon:client<span class="w"> </span>glance:ceph
+</span></code></pre></div>
+<h3 id="215-cinder">2.15 Cinder</h3>
+<p>Criamos cinder.yaml (block-device: None) e implantamos o Cinder em contêiner LXD do server4:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--to<span class="w"> </span>lxd:1<span class="w"> </span>--channel<span class="w"> </span>yoga/stable<span class="w"> </span>--config<span class="w"> </span>cinder.yaml<span class="w"> </span>cinder
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--channel<span class="w"> </span><span class="m">8</span>.0/stable<span class="w"> </span>mysql-router<span class="w"> </span>cinder-mysql-router
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>juju<span class="w"> </span>integrate<span class="w"> </span>cinder-mysql-router:db-router<span class="w">  </span>mysql-innodb-cluster:db-router
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>juju<span class="w"> </span>integrate<span class="w"> </span>cinder-mysql-router:shared-db<span class="w"> </span>cinder:shared-db
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>juju<span class="w"> </span>integrate<span class="w"> </span>cinder:cinder-volume-service<span class="w"> </span>nova-cloud-controller:cinder-volume-service
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>juju<span class="w"> </span>integrate<span class="w"> </span>cinder:identity-service<span class="w">       </span>keystone:identity-service
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>juju<span class="w"> </span>integrate<span class="w"> </span>cinder:amqp<span class="w">                   </span>rabbitmq-server:amqp
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>juju<span class="w"> </span>integrate<span class="w"> </span>cinder:image-service<span class="w">          </span>glance:image-service
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>juju<span class="w"> </span>integrate<span class="w"> </span>cinder:certificates<span class="w">           </span>vault:certificates
+</span></code></pre></div>
+<p>Para usar Ceph como backend, adicionamos o charm subordinado:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--channel<span class="w"> </span>yoga/stable<span class="w"> </span>cinder-ceph
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>juju<span class="w"> </span>integrate<span class="w"> </span>cinder-ceph:storage-backend<span class="w"> </span>cinder:storage-backend
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>juju<span class="w"> </span>integrate<span class="w"> </span>cinder-ceph:ceph<span class="w">            </span>ceph-mon:client
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>juju<span class="w"> </span>integrate<span class="w"> </span>cinder-ceph:ceph-access<span class="w">     </span>nova-compute:ceph-access
+</span></code></pre></div>
+<h3 id="216-ceph-rados-gateway">2.16 Ceph RADOS Gateway</h3>
+<p>Implantamos o Ceph RGW (gateway S3/Swift) em contêiner LXD do server3:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>juju<span class="w"> </span>deploy<span class="w"> </span>--to<span class="w"> </span>lxd:0<span class="w"> </span>--channel<span class="w"> </span>quincy/stable<span class="w"> </span>ceph-radosgw
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>juju<span class="w"> </span>integrate<span class="w"> </span>ceph-radosgw:mon<span class="w"> </span>ceph-mon:radosgw
+</span></code></pre></div>
+<h3 id="217-configuracao-final-dos-discos-ceph-osd">2.17 Configuração final dos discos Ceph OSD</h3>
+<p>Depois de validar todos os serviços, aplicamos a configuração definitiva dos discos OSD:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>juju<span class="w"> </span>config<span class="w"> </span>ceph-osd<span class="w"> </span>osd-devices<span class="o">=</span><span class="s1">&#39;/dev/sdb&#39;</span>
+</span></code></pre></div>
+<h3 id="218-acerca-do-fim-da-infra">2.18 Acerca do Fim da Infra</h3>
+<p>Monitoramos continuamente e avançamos apenas quando todos os units ficaram em active/idle sem erros. Assim, concluímos a implantação do OpenStack via Juju + MAAS; a nuvem ficou pronta para criar redes, imagens e usuários finais.</p>
+<h2 id="3-setup">3. Setup</h2>
+<p>Foi necessário configurar o Openstack, em destaque os serviços que controlam:</p>
+<ul>
+<li>
+<p>As VMs (Nova)</p>
+</li>
+<li>
+<p>Os volumes de disco (Cinder)</p>
+</li>
+<li>
+<p>A estrutura de rede virtual (Neutron)</p>
+</li>
+</ul>
+<h3 id="31-autenticacao-keystone">3.1 Autenticação (Keystone)</h3>
+<ol>
+<li>
+<p>Geramos e baixamos o arquivo openrc contendo OS_AUTH_URL, OS_PROJECT_NAME, OS_USERNAME, OS_PASSWORD, OS_USER_DOMAIN_NAME, OS_PROJECT_DOMAIN_NAME e OS_REGION_NAME.</p>
+</li>
+<li>
+<p>Carregamos as variáveis no shell:</p>
+</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="nb">source</span><span class="w"> </span>openrc
+</span></code></pre></div>
+<ol>
+<li>Confirmamos o acesso listando os serviços:</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>openstack<span class="w"> </span>service<span class="w"> </span>list
+</span></code></pre></div>
+<h3 id="32-acompanhamento-em-tempo-real-horizon">3.2 Acompanhamento em tempo real (Horizon)</h3>
+<p>Abrimos o Horizon em http://<IP-controller>/horizon, domínio admin_domain, usuário admin, e o deixamos ativo para visualizar as mudanças.</p>
+<h3 id="tarefa-1">Tarefa - 1</h3>
+<p>Prints iniciais:</p>
+<h4 id="a-status-do-juju">(a) Status do Juju</h4>
+<p><a class="glightbox" href="../tarefa1.1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa1.1.png" /></a></p>
+<h4 id="b-dashboard-do-maas-com-as-maquinas">(b) Dashboard do MAAS com as máquinas</h4>
+<p><a class="glightbox" href="../tarefa1.2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa1.2.png" /></a></p>
+<h4 id="c-aba-overview">(c) Aba overview</h4>
+<p><a class="glightbox" href="../tarefa1.3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa1.3.png" /></a></p>
+<h4 id="d-aba-instances">(d) Aba instances</h4>
+<p><a class="glightbox" href="../tarefa1.4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa1.4.png" /></a></p>
+<h4 id="e-aba-topology">(e) Aba topology</h4>
+<p><a class="glightbox" href="../tarefa1.5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa1.5.png" /></a></p>
+<h3 id="33-imagens-e-flavors">3.3 Imagens e Flavors</h3>
+<ol>
+<li>
+<p>Instalamos o OpenStack client via snap.</p>
+</li>
+<li>
+<p>Habilitamos DNS interno no Neutron:</p>
+</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>juju<span class="w"> </span>config<span class="w"> </span>neutron-api<span class="w"> </span>enable-ml2-dns<span class="o">=</span><span class="s2">&quot;true&quot;</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>juju<span class="w"> </span>config<span class="w"> </span>neutron-api-plugin-ovn<span class="w"> </span>dns-servers<span class="o">=</span><span class="s2">&quot;172.16.0.1&quot;</span>
+</span></code></pre></div>
+<ol>
+<li>
+<p>Importamos a imagem Ubuntu 22.04 (Jammy) no Glance.</p>
+</li>
+<li>
+<p>Criamos quatro flavors (sem disco efêmero).</p>
+</li>
+</ol>
+<h3 id="34-rede-externa">3.4 Rede externa</h3>
+<p>Definimos a rede public (flat, provider physnet1) com faixa 172.16.7.0 – 172.16.8.255, gateway em 172.16.7.1 e pool de floating IPs reservado.</p>
+<h3 id="35-rede-interna-roteador">3.5 Rede interna &amp; roteador</h3>
+<p>Criamos a rede private (192.169.0.0/24, sem DNS) e Adicionamos um roteador ligando private à rede public e habilitamos NAT.</p>
+<h3 id="36-seguranca-e-chaves">3.6 Segurança e chaves</h3>
+<p>Importamos o par de chaves SSH (~/.ssh/id_rsa.pub) como key-pair padrão e Ajustamos o security group default para permitir SSH (22) e ICMP de qualquer origem.</p>
+<h3 id="37-instancia-de-validacao">3.7 Instância de validação</h3>
+<ol>
+<li>
+<p>Lançamos a VM client (flavor m1.tiny, imagem Jammy, rede private, sem volume novo).</p>
+</li>
+<li>
+<p>Associamos um floating IP.</p>
+</li>
+<li>
+<p>Testamos ping e SSH a partir do main; conexão bem-sucedida confirmou rotas, DHCP e DNS internos.</p>
+</li>
+</ol>
+<h3 id="38-escalonamento-dos-nos">3.8 Escalonamento dos nós</h3>
+<ol>
+<li>Liberamos (release) o server2 no MAAS e, em seguida, adicionamos:</li>
+</ol>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>juju<span class="w"> </span>add-unit<span class="w"> </span>nova-compute<span class="w">          </span><span class="c1"># novo nó de computação  </span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>juju<span class="w"> </span>add-unit<span class="w"> </span>--to<span class="w"> </span>&lt;machine-id&gt;<span class="w"> </span>ceph-osd<span class="w">   </span><span class="c1"># backend extra de storage  </span>
+</span></code></pre></div>
+<ol>
+<li>Verificamos no Horizon que o hipervisor e o OSD extra apareceram disponíveis.</li>
+</ol>
+<h3 id="tarefa-2">Tarefa 2</h3>
+<h4 id="1-prints-pos-setup">1. Prints Pós-Setup</h4>
+<h4 id="a-dashboard-maas-com-as-maquinas">(a) Dashboard MAAS com as máquinas</h4>
+<p><a class="glightbox" href="../tarefa2.1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa2.1.png" /></a></p>
+<h4 id="b-aba-overview">(b) Aba Overview</h4>
+<p><a class="glightbox" href="../tarefa2.2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa2.2.png" /></a></p>
+<h4 id="c-aba-instances">(c) Aba instances</h4>
+<p><a class="glightbox" href="../tarefa2.3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa2.3.png" /></a></p>
+<h4 id="d-aba-topology">(d) Aba topology</h4>
+<p><a class="glightbox" href="../tarefa2.4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt text" src="../tarefa2.4.png" /></a></p>
+<h4 id="2-diferencas-encontradas-entre-os-prints-das-telas-na-tarefa-1-e-na-tarefa-2">2. Diferenças encontradas entre os prints das telas na Tarefa 1 e na Tarefa 2</h4>
+<ol>
+<li>
+<p>Dashboard do MAAS – na primeira captura, o server2 aparecia apenas como “Allocated/Ready”, ainda sem sistema instalado. Depois do setup ele surgiu como “Deployed”, indicando que foi instalado e passou a integrar o cluster.</p>
+</li>
+<li>
+<p>Compute › Overview (Horizon) – inicialmente o painel listava três hipervisores (server3, 4 e 5) com zero vCPU e memória em uso. Após as configurações, um quarto hipervisor (server2) aparece e já se nota consumo de 1 vCPU e 1 GB de RAM, refletindo a execução da VM de teste.</p>
+</li>
+<li>
+<p>Compute › Instances (Horizon) – antes não havia nenhuma instância; agora existe a VM chamada client, estado Active, lançada no flavor m1.tiny, conectada à rede private e com um floating IP associado.</p>
+</li>
+<li>
+<p>Network › Topology (Horizon) – a topologia inicial exibia apenas a rede provider (physnet1). Depois do setup vimos a rede externa public, a rede interna private, o roteador router1 unindo as duas sub-redes e a porta da instância client, confirmando que o plano de rede virtual foi construído corretamente.</p>
+</li>
+</ol>
+<h4 id="3-origem-de-cada-novo-recurso">3. Origem de cada novo recurso</h4>
+<ol>
+<li>
+<p>Hiper­visor e OSD no server2 – liberamos o nó reserva no MAAS, depois executamos juju add-unit nova-compute para transformá-lo em nó de computação e juju add-unit --to <machine-id> ceph-osd para acrescentar um OSD de armazenamento.</p>
+</li>
+<li>
+<p>Imagem Ubuntu Jammy – baixamos a QCOW2 oficial e a carregamos no Glance via openstack image create, definindo formato qcow2 e nome “ubuntu-jammy”.</p>
+</li>
+<li>
+<p>Flavors m1.tiny, m1.small, m1.medium e m1.large – criados com openstack flavor create, especificando vCPU, RAM e disco conforme a planilha do roteiro, todos sem disco efêmero.</p>
+</li>
+<li>
+<p>Rede externa public – construída com openstack network create usando tipo flat em physnet1; em seguida openstack subnet create definiu a faixa 172.16.7.0/23 (pool de 172.16.7.10 a 172.16.8.250) e gateway 172.16.7.1.</p>
+</li>
+<li>
+<p>Rede interna private – criada via openstack network create private e openstack subnet create com o CIDR 192.169.0.0/24, sem DNS.</p>
+</li>
+<li>
+<p>Roteador router1 – gerado com openstack router create, configurado com gateway externo (public) e adicionado à subnet private para habilitar NAT.</p>
+</li>
+<li>
+<p>Key-pair principal – importado no CLI com openstack keypair create --public-key ~/.ssh/id_rsa.pub main-key, permitindo login por SSH nas VMs.</p>
+</li>
+<li>
+<p>Regras de segurança – no Horizon, editamos o security group default para liberar tráfego SSH (porta 22) e ICMP (ping) para qualquer origem.</p>
+</li>
+<li>
+<p>Instância client – lançada pelo Horizon, selecionando imagem Jammy, flavor m1.tiny, rede private e a key main-key.</p>
+</li>
+<li>
+<p>Floating IP – alocado do pool da rede public e associado à VM pelo menu Associate Floating IP no Horizon.</p>
+</li>
+</ol>
+<h3 id="39-openstack-funcional">3.9 Openstack Funcional</h3>
+<p>Com o OpenStack funcional, planejamos:</p>
+<ol>
+<li>
+<p>Automatizar a criação de projetos e quotas para usuários finais.</p>
+</li>
+<li>
+<p>Publicar imagens customizadas (Docker-ready, GPU etc.).</p>
+</li>
+<li>
+<p>Documentar a política de alocação de floating IPs e monitorar uso via Grafana/Prometheus já existentes no cluster.</p>
+</li>
+</ol>
+<h3 id="tarefa-3">Tarefa 3</h3>
+<div class="language-text highlight"><pre><span></span><code>                       +--------------------+
+                       |      INSPER        |
+                       +---------+----------+
+                                 |
+                                 v    (link externo)
+                       +---------+----------+
+                       |  Roteador TP-Link  |
+                       +---------+----------+
+                                 |
+                                 v    (cabo LAN)
+                       +---------+----------+
+                       | Switch D-Link 28p  |
+                       +---------+----------+
+        __________________|________|________________________
+       |        |          |        |        |        |      |
+       v        v          v        v        v        v      v
+  +--------+ +--------+ +--------+ +--------+ +--------+ +--------+
+  |  Main  | |Server1 | |Server2 | |Server3 | |Server4 | |Server5 |
+  | (MAAS  | |Controller|Compute | |Compute | |Compute | |Compute |
+  | + Juju)| |  + API  |+OSD+VMs| |+OSD+VMs| |+OSD+VMs| |+OSD+VMs|
+  +--+--+--+ +----+---+ +----+---+ +----+---+ +----+---+ +----+---+
+     | br-ex     | br-ex   | br-ex   | br-ex   | br-ex   | br-ex
+     |           |         |         |         |         |
+     |           |         |         |         |         |
+     |      +----+---------+-----------------------------------+
+     |      |                    PublicNet (172.16.7.0/23)     |
+     |      +----+---------------------------------------------+
+     |           |
+     |           |  *Floating IP pool*
+     |           v
+     |      +----+----+
+     |      | Router1 |  (Neutron L3, NAT)
+     |      +----+----+
+     |           |
+     |           |  *interface interna*
+     v           v
+</code></pre></div>
+<p>+-----------------------------+
+|   PrivateNet (192.169.0.0)  |
++--------------+--------------+
+               |
+               v
+         +-----+-----+
+         |  VM client|   (m1.tiny, key-pair main-key)
+         +-----------+</p>
+<h2 id="4-app">4. App</h2>
+<p>Nesta etapa levantamos as aplicações do projeto em quatro VMs na nuvem OpenStack:</p>
+<ul>
+<li>
+<p>2 × API (FastAPI, etapa 1)</p>
+</li>
+<li>
+<p>1 × Banco de dados (PostgreSQL, etapa 1)</p>
+</li>
+<li>
+<p>1 × Load-Balancer (Nginx)</p>
+</li>
+</ul>
+<p>Todas as instâncias foram criadas dentro da rede PrivateNet (192.169.0.0/24) e expostas ao mundo por meio de um floating IP na rede PublicNet (172.16.0.0/20).</p>
+<h3 id="tarefa-4">Tarefa 4</h3>
 
 
 
