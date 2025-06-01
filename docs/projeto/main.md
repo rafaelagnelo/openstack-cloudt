@@ -1,5 +1,7 @@
 # Roteiro Final - Projeto 2025.1: API RESTful + Docker + AWS Lightsail
 
+##Link do Projeto: [GitHub - Projeto Cloud 2025.1](https://github.com/rafaelagnelo/projeto-cloudT25.1)
+
 ## Integrantes:
 * Rafael Agnelo 
 * Pedro Henrique Vidal
@@ -16,7 +18,8 @@ O objetivo do nosso projeto foi construir uma aplicação completa baseada em um
 
 Além disso, nos preocupamos com boas práticas como segurança, estrutura de pastas, documentação com MkDocs e monitoramento de custos.
 
-📸 *Espaço reservado para imagem conceitual ou diagrama geral do projeto*
+📸 *Imagem conceitual ou diagrama geral do projeto*
+![alt text](diagrama.png "Diagrama Geral do Projeto")
 
 ---
 
@@ -173,6 +176,29 @@ Testamos os endpoints pelo próprio link fornecido pela AWS Lightsail. Verificam
 * Acesso ao `/consultar` com scraping de dados reais
 * Funcionamento do `/health-check`
 
+O domínio publico foi configurado para apontar para o serviço de container, permitindo acesso externo.
+
+##Link do domínio de acesso: [Public Domain FastAPI Service](https://fastapi-service.bx2qk2acj1aym.us-east-1.cs.amazonlightsail.com/docs)
+
+##*Prints dos testes realizados:*
+
+*Endpoint registrar:*
+![alt text](registraraws2.jpeg "Testes de Endpoints na AWS Lightsail")
+
+*Resposta do endpoint registrar:*
+![alt text](registraraws.jpeg "Testes de Endpoints na AWS Lightsail")
+
+*Endpoint login/consulta:*
+![alt text](loginaws.jpeg "Testes de Endpoints na AWS Lightsail")
+
+*Resposta do endpoint login/consulta:*
+![alt text](login2aws.jpeg "Testes de Endpoints na AWS Lightsail")
+
+*Resposta do endpoint login/consulta:*
+![alt text](loginjwt.jpeg "Testes de Endpoints na AWS Lightsail")
+
+*Saída de resposta da API no terminal:*
+![alt text](resposta.jpeg "Testes de Endpoints na AWS Lightsail")
 
 ### 3.5 Custos
 
