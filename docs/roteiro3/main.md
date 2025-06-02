@@ -510,3 +510,17 @@ Nesta etapa levantamos as aplicações do projeto em quatro VMs na nuvem OpenSta
 Todas as instâncias foram criadas dentro da rede PrivateNet (192.169.0.0/24) e expostas ao mundo por meio de um floating IP na rede PublicNet (172.16.0.0/20).
 
 ### Tarefa 4 
+
+#### Lista das Máquinas Virtuais
+
+![alt text](tarefa4.1.png)
+
+#### Servers Alocados
+
+1. ![alt text](tarefa4.2.png)
+
+2. ![alt text](tarefa4.3.png)
+
+3. ![alt text](tarefa4.4.png)
+
+4. ![alt text](tarefa4.5.png)
